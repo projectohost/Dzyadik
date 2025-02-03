@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+}
+
+
+.logo{
+    width: 30px;
+    height: 30px;
+
+    filter:  hue-rotate(3600deg);
+}
+
+.hero-img{
+    border-radius: 10%;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center; /* Вирівнює по горизонталі */
+  align-items: center;     /* Вирівнює по вертикалі */
+  flex-wrap: wrap;
+  gap: 20px;               /* Відстань між фотографіями */
+}
+
+.photo {
+  width: 200px;            /* Встановлюємо фіксовану ширину для фотографій */
+  height: auto;            /* Висота буде автоматично пропорційною */
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+
+.photo-container {
+  display: flex;
+  justify-content: center; /* Вирівнює по горизонталі */
+  align-items: center;     /* Вирівнює по вертикалі */
+  flex-wrap: wrap;
+  gap: 20px;               /* Відстань між фотографіями */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;      /* Вирівнюємо текст по центру */
+  transition: transform 0.3s ease-in-out; /* Плавна анімація при масштабуванні */
+}
+
+.item:hover {
+  transform: scale(1.05);  /* Збільшуємо елемент при наведенні */
+}
+
+.item img {
+  width: 100%;             /* Фіксована ширина на 100% контейнера */
+  height: 300px;           /* Залишаємо висоту фіксованою */
+  border-radius: 10px;     /* Заокруглення кутиків фотографій */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легенька тінь для фотографій */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавні ефекти */
+}
+
+.item img:hover {
+  transform: scale(1.05);   /* Фото трохи збільшується при наведенні */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тінь стає яскравішою */
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.item:hover p {
+  opacity: 1;              /* Текст стає видимим при наведенні */
+  transform: translateY(0); /* Текст піднімається */
+}
+
+@media (max-width: 768px) {
+  .photo-container {
+    gap: 10px; /* Менший зазор на маленьких екранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%; /* Робимо елементи на всю ширину контейнера на дуже малих екранах */
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+    background-color: #rgba;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+footer .footer-container p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer .footer-container p:last-child {
+    font-style: italic;
+    font-size: 14px;
+}
+
